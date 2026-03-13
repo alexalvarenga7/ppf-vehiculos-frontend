@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/api/registros';
+const API_URL = 'https://ppf-vehiculos-api.onrender.com/api/registros';
 
 export const obtenerRegistros = async (filtros = {}) => {
     const respuesta = await axios.get(API_URL, { params: filtros });
